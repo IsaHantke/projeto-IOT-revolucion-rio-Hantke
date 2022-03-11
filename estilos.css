@@ -1,14 +1,35 @@
+body {
+    margin: 0px;
+    font-family: monospace;
+}
 
-    h1, p, i {
-        color:cadetblue;
-        font-size: 20px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-    
-.titulo{
-    color: red ;
+.header {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    margin-top: 0px;
+    border-bottom: 3px blueviolet solid;
 }
-    
-#paragrafo{
-    color: purple;
+
+h1 {
+    margin-top: 0%;
+    color: antiquewhite;
 }
+
+.header .container {
+    width: 70%;
+    background-color: cornflowerblue;
+    display: flex;
+}
+
+.navbar {
+    list-style: none;
+    width: 500px;
+    align-items: center;
+    display: flex;
+    background-color: rgb(116, 160, 243);
+    justify-content: space-between;
+    color: antiquewhite;
+}
+
+
+
