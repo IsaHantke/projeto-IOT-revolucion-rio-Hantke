@@ -1,24 +1,53 @@
+/* 
+Existem 3 formas de chamar um conteúdo no css. Pela tag Ex h1 { Estilização}
+Pelo class pré posto no html, utilizando um ponto. Ex: .h1
+Ou pelo id utilizando uma #, #id_h1 
+
+
+A % é % da tela
+e px é melhor para tamanhos.
+
+O display flex faz com que os elementos fiquem 1 do lado do outro, para arrumar isso, é usado o 
+flex-direction: column; 
+mas ainda precisamos colocar o align-items: center; e o justify-content: center;
+ficou mais bonitinho, mas da para melhorar.
+
+Quando colocamos o font-family, ele mostra várias fontes em uma linha. por que se o navegador não
+suportar, ele vai para a próxima.
+
+Selecionando o F12, elements, do lado vai ter um styles, seleciona a tag no elements e consegue achar a cor.
+*/
+
 body {
-    margin: 0px;
-    font-family: monospace;
+    background-color: black;
+    margin: 0px; /* Aqui ele tira aquele espaço pequeno em cima da header */
+    font-family: monospace; /* Mudou a fonte das letras da página */
 }
 
 .header {
-    background-color: rgb(0, 0, 0);
-    width: 100%;
-    margin-top: 0px;
-    border-bottom: 3px blueviolet solid;
+    width: 100%; /* Faz com que a header ocupe 100% da largura da página */
+    border-bottom: 3px blueviolet solid; /* Coloca aquela bordinha na parte debaixo da header */
+    height: 100px; /* Ajusta a altura */
+    align-items: center;
 }
 
-h1 {
-    margin-top: 0%;
-    color: antiquewhite;
+.título {
+    margin: 0%; /* Tira a margem do topo */
+    color: #32b9cd;
+    
+
 }
 
-.header .container {
-    width: 70%;
-    background-color: cornflowerblue;
-    display: flex;
+.container {
+   width: 80%;
+   margin: auto;
+   display: flex;
+}
+
+.header .container { /* Aqui diz que é o conteiner dentro da header */
+    justify-content: space-between; /* Esse space between só pode ser usado com display flex que está configurado na linha 21 */
+    align-items: center;
+    height: 100%;
 }
 
 .navbar {
@@ -26,9 +55,59 @@ h1 {
     width: 500px;
     align-items: center;
     display: flex;
-    background-color: rgb(116, 160, 243);
     justify-content: space-between;
+    color: orange;
+    padding: 0;
+}
+
+.phome {
     color: antiquewhite;
+}
+
+/* Começo do banner */
+
+.banner_login {
+    height: 500px;
+    background-image: url(Aula_HTML_CSS/imgs/bg-jelly-fish-para-home.png) ; /* coloca uma imagem no background */
+   background-size: cover;
+}
+
+.banner_login .container .card {
+    background-color: aliceblue;
+    height: 450px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    
+}
+
+.banner_login .container .card .btn {
+    font-family: monospace;
+    margin-top: 10px; /* Assim ele desencostado input */
+    border: 0; /* Assim ele tira a borda do button */
+    font-weight: 600; /* Ele não precisa de unidade de medida, essa estilização engrossa a letra */
+    background-color: #e75459;
+    color: white;
+    font-size: 18px; /* Aumenta a fonte */
+    border-radius: 4px;
+    padding: 10px 15px;
+    
+}
+
+
+.banner_login .card { 
+    color: #e75459 ;
+}
+
+input {
+    height: 30px;
+    border: 2px solid #e75459;
+    border-radius: 8px; /* deixa a borda fofa, circundada */
 }
 
 
