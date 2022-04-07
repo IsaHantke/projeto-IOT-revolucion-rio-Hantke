@@ -1,0 +1,74 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <meta charset='utf-8'>
+      <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+      <title>Cadastro</title>
+      <meta name='viewport' content='width=device-width, initial-scale=1'>
+      <link rel='stylesheet' type='text/css' media='screen' href='estilos.css'>
+      <script src='main.js'></script>
+  </head>
+  <body>
+        
+    <!-- Início Header-->
+    <div class="header">  <!-- Essa class é a identificação-->
+        <div class="container"> 
+            
+            <h1 class="título">AcquaTec </h1> 
+
+        <ul class="navbar">
+             <li> <a class="refhome" href="index.html"> Home </a>  </li> &nbsp;
+             <li> Sobre Nós </li> &nbsp;
+             <li> <a class="reflogin" href="login.html">Login</a> </li> &nbsp; <!-- A tag <a href> vem de ancor e faz a palavra quando clicada te levar ao link dentro da href-->
+             <li> Cadastrar </li> &nbsp;
+             <li> Suporte </li> &nbsp;
+        </ul>
+        
+        </div>
+    </div>
+
+    <!-- Final Header-->
+    
+    <div class="cadbody"> 
+        
+        <div class="bannercadastro"> 
+
+         <h1 class="cadh1"> Faça seu cadastro </h1>
+        
+         <p class="emailp"> Seu email: </p>
+        
+        <input class="emailinput" placeholder="Example@gmail.com">
+        
+        <p class="telefonep"> Seu telefone: </p>
+    
+        <input class="telefoneinput" placeholder="(99) 99999-9999">
+
+        <p class="nomep"> Nome: </p>
+
+        <input class="nomeinput" placeholder="Seu nome">
+       
+    <p class="sobrenomep"> Sobrenome:</p>
+
+    <input class="sobrenomeinput" placeholder="Seu sobrenome"> 
+    
+
+    <p class="senhap"> Insira sua senha </p>
+    
+    <input class="senhainput" placeholder="Escolha sua senha" type="password">
+    
+   <button onclick="funcione()" class="cadbutton"> Cadastro</button>
+
+</div>
+    
+    
+    </div>
+
+
+  </body>
+  </html>
+
+  <script>
+      function funcione() {
+          alert(`Seu cadastro foi realizado.`)
+      }
+  </script>

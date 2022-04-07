@@ -56,8 +56,23 @@ body {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    color: orange;
+    color: rgb(251, 251, 251);
     padding: 0;
+}
+
+.reflogin {
+    text-decoration: none;
+    color: white;
+}
+
+.refhome {
+    text-decoration: none;
+    color: white;
+}
+
+.refcadastrar {
+    text-decoration: none;
+    color: white;
 }
 
 .phome {
@@ -112,3 +127,83 @@ input {
 
 
 
+/* Cad body */
+
+.cadbody {
+    background-image: url(Aula_HTML_CSS/imgs/bg-jelly-fish-para-home.png);
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bannercadastro {
+    border-radius: 10px;
+    width: 600px;
+    height: 690px;
+    background-color: rgba(255, 255, 255, 0.929);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadh1 {
+    color: #e75459;
+    font-family: 'Trebuchet MS';
+    font-size: 36px;
+}
+
+.emailp {
+    font-size: 18PX;
+}
+
+.emailinput {
+    background-color: #bab9b9;
+    font-size: 12px;
+}
+
+::-webkit-input-placeholder {
+    color: black;
+}
+
+.telefonep {
+    font-size: 18px;
+}
+
+.telefoneinput {
+    background-color: #bab9b9;
+}
+
+.nomep {
+    font-size: 18px;
+}
+
+.nomeinput {
+    background-color: #bab9b9;
+}
+
+.sobrenomep {
+    font-size: 18px;
+}
+
+.sobrenomeinput {
+    background-color: #bab9b9;
+}
+
+.senhap {
+    font-size: 18px;
+}
+
+.senhainput {
+    background-color: #bab9b9;
+}
+
+.cadbutton {
+    margin-top: 20px;
+    width: 100px;
+    height: 50px;
+    background-color: #e75459;
+    font-weight: bold;
+}
